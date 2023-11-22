@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: mysql8
+    build:
+      context: ./docker/db/
+      dockerfile: Dockerfile
+    ports:
+      - 23306:3306
+    env_file:
+      - ./docker/db/db-access.env
+    volumes:
+      - db-data:/var/lib/mysql/
+    restart: always
+  web:
+    container_name: php8
+    build:
+      context: ./docker/web/
+      dockerfile: Dockerfile
+    ports:
+      - 20080:80
+    volumes:
+      - ./src:/var/www/html/
+      - ./docker/web/php.ini:/usr/local/etc/php/conf.d/php.ini
+    tty: true
+    working_dir: /var/www/html/
+    depends_on:
+      - db
+volumes:
+  db-data:

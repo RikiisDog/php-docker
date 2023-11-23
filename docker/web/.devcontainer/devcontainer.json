@@ -50,6 +50,7 @@
                 "intelephense.environment.phpVersion": "8.1.25",
                 // phpのデフォルトのコード補完機能を無効化
                 "php.suggest.basic": false,
+                "php.validate.enable": false,
                 // PHPコードの検証に使用するPHPの実行可能ファイルのパス
                 "php.validate.executablePath": "/usr/local/bin/php",
                 //【JavaScript】

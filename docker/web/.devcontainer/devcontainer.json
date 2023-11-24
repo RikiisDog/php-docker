@@ -11,8 +11,10 @@
                 "bmewburn.vscode-intelephense-client",
                 "xdebug.php-debug",
                 "MehediDracula.php-namespace-resolver",
+                "neilbrayfield.php-docblocker",
                 "mrmlnc.vscode-apache",
-                "esbenp.prettier-vscode"
+                "esbenp.prettier-vscode",
+                "oderwat.indent-rainbow"
             ],
             "settings": {
                 // インデントの自動検出を無効にする

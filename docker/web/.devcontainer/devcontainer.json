@@ -53,6 +53,8 @@
                 "php.validate.enable": false,
                 // PHPコードの検証に使用するPHPの実行可能ファイルのパス
                 "php.validate.executablePath": "/usr/local/bin/php",
+                // Intelephenseの自動成形をK&Rスタイルにする(波括弧を改行しない)
+                "intelephense.format.braces": "k&r",
                 //【JavaScript】
                 // 自動インポートを有効にする
                 "javascript.suggest.autoImports": true,

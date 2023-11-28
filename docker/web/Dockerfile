@@ -5,7 +5,7 @@ ARG USER_NAME="vscode"
 ARG USER_GROUP_NAME="php"
 ARG USER_UID="1000"
 ARG USER_GID="1000"
-ARG PKG="sudo curl git wget zip unzip vim libfreetype6-dev libjpeg62-turbo-dev libpng-dev libpq-dev libonig-dev libxml2-dev libzip-dev"
+ARG PKG="sudo curl git wget zip unzip locales-all vim libfreetype6-dev libjpeg62-turbo-dev libpng-dev libpq-dev libonig-dev libxml2-dev libzip-dev"
 ARG PHP_PKG="mbstring exif pcntl bcmath gd pdo pdo_mysql mysqli"
 ARG PECL_PKG="xdebug"
 ARG ENVIRONMENT

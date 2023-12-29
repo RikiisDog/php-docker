@@ -45,5 +45,8 @@ RUN groupadd --gid ${USER_GID} ${USER_GROUP_NAME} && \
 RUN echo "%${USER_GROUP_NAME} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER_GROUP_NAME} && \
     chmod 0440 /etc/sudoers.d/${USER_GROUP_NAME}
 
+# Add Vim settings
+RUN echo "set encoding=utf-8\nset fileencodings=iso-2022-jp,euc-jp,sjis,utf-8\nset fileformats=unix,dos,mac" >> /etc/vim/vimrc
+
 # Switch to the user
 USER ${USER_NAME}
